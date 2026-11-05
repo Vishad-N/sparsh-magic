@@ -5,6 +5,7 @@ import Divider from '@/components/Divider';
 import Icon from '@/components/Icon';
 import { PageHero } from '@/components/Blocks';
 import { mapLink, site, tel, waLink } from '@/lib/data';
+import { bd } from '@/lib/backdrops';
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -17,6 +18,7 @@ export default function ContactPage() {
     <>
       <PageHero
         crumbs={[{ label: 'Contact' }]}
+        backdrop={bd.contact.hero}
         eyebrow="Contact"
         title={
           <>

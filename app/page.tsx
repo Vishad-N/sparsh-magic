@@ -1,11 +1,14 @@
 import Link from 'next/link';
+import Backdrop from '@/components/Backdrop';
 import Button from '@/components/Button';
+import { bd } from '@/lib/backdrops';
 import CountUp from '@/components/CountUp';
 import Divider from '@/components/Divider';
 import HeroPanel from '@/components/HeroPanel';
+import HeroPattern from '@/components/HeroPattern';
 import Icon from '@/components/Icon';
 import PillarExplorer from '@/components/PillarExplorer';
-import { CtaBand, FounderStats, IconTile, PainList, Portrait, ResultsGrid, SectionHead, Steps, Ticker } from '@/components/Blocks';
+import { CtaBand, FounderStats, Num, IconTile, PainList, Portrait, ResultsGrid, SectionHead, Steps, Ticker } from '@/components/Blocks';
 import { caseStudies, founder, industries, stats } from '@/lib/data';
 import { pillarItems } from '@/lib/explorer';
 
@@ -29,6 +32,7 @@ export default function Home() {
     <>
       {/* ============ HERO ============ */}
       <section className="hero">
+        <HeroPattern />
         <div className="wrap hero-grid">
           <div>
             <span className="badge rv">
@@ -59,7 +63,7 @@ export default function Home() {
               </div>
               <div>
                 <b>
-                  {stats.cost}
+                  <Num value={stats.cost} />
                   <em>%</em>
                 </b>
                 <span>annual cost reduction</span>
@@ -102,6 +106,7 @@ export default function Home() {
 
       {/* ============ PROBLEM ============ */}
       <section className="sec">
+        <Backdrop items={bd.home.problem} />
         <div className="wrap">
           <SectionHead
             eyebrow="The stuck pattern"
@@ -151,6 +156,7 @@ export default function Home() {
 
       {/* ============ FRAMEWORK ============ */}
       <section className="sec paper">
+        <Backdrop items={bd.home.framework} />
         <Divider variant="grid" className="dv-top" />
         <div className="wrap">
           <SectionHead
@@ -177,6 +183,7 @@ export default function Home() {
 
       {/* ============ RESULTS ============ */}
       <section className="sec dark">
+        <Backdrop items={bd.home.results} tone="dark" />
         <div className="wrap">
           <SectionHead
             eyebrow="Results on the P&L"
@@ -214,6 +221,7 @@ export default function Home() {
 
       {/* ============ HOW IT WORKS ============ */}
       <section className="sec">
+        <Backdrop items={bd.home.how} />
         <div className="wrap">
           <SectionHead
             eyebrow="How it works"

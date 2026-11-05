@@ -377,6 +377,7 @@
 .post-read{margin-top:auto;font:600 13px/1 var(--font-mono);color:var(--purple-deep)}
 .related{margin-top:24px}
 
+.post{position:relative}
 .post-head{padding-top:36px;padding-bottom:8px}
 .post-head h1{font-size:clamp(36px,6.4vw,60px);letter-spacing:-.04em;line-height:1.04;margin-top:18px}
 .post-dek{font-size:clamp(18px,2.2vw,21px);color:var(--ink-2);margin-top:18px;line-height:1.5}

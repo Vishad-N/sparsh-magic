@@ -3,6 +3,7 @@ import AuraScan from '@/components/AuraScan';
 import Divider from '@/components/Divider';
 import { PageHero, SectionHead } from '@/components/Blocks';
 import { site, tel, waLink } from '@/lib/data';
+import { bd } from '@/lib/backdrops';
 
 export const metadata: Metadata = {
   title: 'AURA Scan: Free 5-Minute Team System Diagnostic',
@@ -22,6 +23,7 @@ export default function AuraPage() {
     <>
       <PageHero
         crumbs={[{ label: 'AURA Scan' }]}
+        backdrop={bd.aura.hero}
         eyebrow="AURA Scan · Free diagnostic"
         title={
           <>

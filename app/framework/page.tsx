@@ -4,9 +4,11 @@ import BeforeAfter, { type BARow } from '@/components/BeforeAfter';
 import Button from '@/components/Button';
 import Divider from '@/components/Divider';
 import PillarExplorer from '@/components/PillarExplorer';
-import { CtaBand, JsonLd, SectionHead } from '@/components/Blocks';
+import { CtaBand, JsonLd, Num, SectionHead } from '@/components/Blocks';
 import { benefits, levels, map49, pillars, site, specialties } from '@/lib/data';
 import { pillarItems } from '@/lib/explorer';
+import Backdrop from '@/components/Backdrop';
+import { bd } from '@/lib/backdrops';
 
 export const metadata: Metadata = {
   title: 'MAP49™ Framework: 7 Pillars × 7 Levels',
@@ -115,6 +117,7 @@ export default function FrameworkPage() {
 
       {/* ============ PILLARS IN DEPTH ============ */}
       <section className="sec-tight">
+        <Backdrop items={bd.framework.deep} />
         <div className="wrap">
           <SectionHead
             eyebrow="The 7 pillars in depth"
@@ -184,6 +187,7 @@ export default function FrameworkPage() {
 
       {/* ============ IN PRACTICE ============ */}
       <section className="sec-tight">
+        <Backdrop items={bd.framework.practice} />
         <div className="wrap">
           <SectionHead
             eyebrow="How it works in practice"
@@ -239,7 +243,7 @@ export default function FrameworkPage() {
           <div className="bn-grid">
             {benefits.map((b, i) => (
               <article key={b.title} className="bn rv" style={{ ['--rd' as string]: `${i * 0.05}s` }}>
-                <span className="bn-num">{b.metric}</span>
+                <span className="bn-num"><Num value={b.metric} /></span>
                 <span className="bn-lab">{b.metricLabel}</span>
                 <h3>{b.title}</h3>
                 <p>{b.description}</p>
@@ -252,6 +256,7 @@ export default function FrameworkPage() {
 
       {/* ============ FAQ ============ */}
       <section className="sec-tight">
+        <Backdrop items={bd.framework.faq} />
         <div className="wrap wrap-narrow">
           <SectionHead eyebrow="Questions founders ask" title="Before you start." />
           <div className="faq rv">

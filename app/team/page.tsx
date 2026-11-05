@@ -3,6 +3,8 @@ import Button from '@/components/Button';
 import Divider from '@/components/Divider';
 import { CtaBand, PageHero, SectionHead } from '@/components/Blocks';
 import { founder, site, teamUnits } from '@/lib/data';
+import Backdrop from '@/components/Backdrop';
+import { bd } from '@/lib/backdrops';
 
 export const metadata: Metadata = {
   title: 'Team',
@@ -25,6 +27,7 @@ export default function TeamPage() {
     <>
       <PageHero
         crumbs={[{ href: '/about', label: 'About' }, { label: 'Team' }]}
+        backdrop={bd.team.hero}
         eyebrow="Team"
         title={
           <>
@@ -63,6 +66,7 @@ export default function TeamPage() {
       <Divider variant="scan" />
 
       <section className="sec-tight">
+        <Backdrop items={bd.team.join} />
         <div className="wrap join">
           <SectionHead eyebrow="Join us" title="Want to take employee productivity to the world?" lead="We hire people who are their own managers. Read how we work, then tell us about yourself." />
           <div className="btn-row">

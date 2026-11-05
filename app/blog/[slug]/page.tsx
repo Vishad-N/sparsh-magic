@@ -5,6 +5,8 @@ import Divider from '@/components/Divider';
 import { CtaBand, JsonLd } from '@/components/Blocks';
 import { formatDate, getPost, posts, readMinutes, sortedPosts } from '@/lib/blog';
 import { founder, site } from '@/lib/data';
+import Backdrop from '@/components/Backdrop';
+import { bd } from '@/lib/backdrops';
 
 export const dynamicParams = false;
 
@@ -45,6 +47,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         }}
       />
       <article className="post">
+        <Backdrop items={bd.blog.post} />
         <header className="post-head wrap wrap-narrow">
           <nav aria-label="Breadcrumb">
             <ol className="crumbs">

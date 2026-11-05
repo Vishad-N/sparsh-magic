@@ -3,6 +3,8 @@ import Divider from '@/components/Divider';
 import IndustryExplorer from '@/components/IndustryExplorer';
 import { CtaBand, PageHero, SectionHead, Steps } from '@/components/Blocks';
 import { industries } from '@/lib/data';
+import Backdrop from '@/components/Backdrop';
+import { bd } from '@/lib/backdrops';
 
 export const metadata: Metadata = {
   title: 'Industries: MAP49™ for Manufacturing, Retail, Fitness, Restaurants & More',
@@ -16,6 +18,7 @@ export default function IndustriesPage() {
     <>
       <PageHero
         crumbs={[{ label: 'Industries' }]}
+        backdrop={bd.industries.hero}
         eyebrow="Industries"
         title={
           <>
@@ -36,6 +39,7 @@ export default function IndustriesPage() {
       <Divider variant="trail" />
 
       <section className="sec-tight">
+        <Backdrop items={bd.industries.steps} />
         <div className="wrap">
           <SectionHead
             eyebrow="Same steps, every sector"

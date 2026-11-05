@@ -2,8 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Divider from '@/components/Divider';
 import TimeSaved from '@/components/TimeSaved';
-import { CtaBand, ResultsGrid, SectionHead } from '@/components/Blocks';
+import { CtaBand, Num, ResultsGrid, SectionHead } from '@/components/Blocks';
 import { benefits, caseStudies, testimonials } from '@/lib/data';
+import Backdrop from '@/components/Backdrop';
+import { bd } from '@/lib/backdrops';
 
 export const metadata: Metadata = {
   title: 'Results & Case Studies',
@@ -16,6 +18,7 @@ export default function ResultsPage() {
   return (
     <>
       <section className="sec dark res-hero">
+        <Backdrop items={bd.results.hero} tone="dark" />
         <div className="wrap">
           <nav aria-label="Breadcrumb">
             <ol className="crumbs">
@@ -43,7 +46,7 @@ export default function ResultsPage() {
           <div className="bn-grid compact">
             {benefits.map((b, i) => (
               <article key={b.title} className="bn rv" style={{ ['--rd' as string]: `${i * 0.05}s` }}>
-                <span className="bn-num">{b.metric}</span>
+                <span className="bn-num"><Num value={b.metric} /></span>
                 <span className="bn-lab">{b.metricLabel}</span>
                 <h3>{b.title}</h3>
               </article>

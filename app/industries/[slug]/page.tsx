@@ -4,9 +4,11 @@ import { notFound } from 'next/navigation';
 import Button from '@/components/Button';
 import Divider from '@/components/Divider';
 import PillarExplorer from '@/components/PillarExplorer';
-import { CtaBand, IconTile, PageHero, PainList, SectionHead } from '@/components/Blocks';
+import { CtaBand, IconTile, Num, PageHero, PainList, SectionHead } from '@/components/Blocks';
 import { caseStudies, getIndustry, industries, stats } from '@/lib/data';
 import { industryItems } from '@/lib/explorer';
+import Backdrop from '@/components/Backdrop';
+import { bd } from '@/lib/backdrops';
 
 export const dynamicParams = false;
 
@@ -58,6 +60,7 @@ export default function IndustryPage({ params }: { params: { slug: string } }) {
       <Divider variant="cells" />
 
       <section className="sec-tight">
+        <Backdrop items={bd.industry.pains} />
         <div className="wrap ind-split">
           <div>
             <SectionHead
@@ -74,6 +77,7 @@ export default function IndustryPage({ params }: { params: { slug: string } }) {
       </section>
 
       <section className="sec-tight paper">
+        <Backdrop items={bd.industry.mapping} />
         <Divider variant="grid" className="dv-top" />
         <div className="wrap">
           <SectionHead
@@ -90,7 +94,7 @@ export default function IndustryPage({ params }: { params: { slug: string } }) {
       <section className="strip dark">
         <div className="wrap strip-in">
           <div>
-            <span className="strip-num">{stats.cost}%</span>
+            <span className="strip-num"><Num value={stats.cost} />%</span>
             <span className="strip-lab">annual cost reduction</span>
           </div>
           <div>

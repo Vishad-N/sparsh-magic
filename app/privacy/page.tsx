@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { PageHero } from '@/components/Blocks';
 import { site } from '@/lib/data';
+import Backdrop from '@/components/Backdrop';
+import { bd } from '@/lib/backdrops';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
@@ -11,8 +13,9 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <>
-      <PageHero crumbs={[{ label: 'Privacy' }]} eyebrow="Legal" title="Privacy policy" lead={`How ${site.legalName} handles the information you share with us.`} />
+      <PageHero crumbs={[{ label: 'Privacy' }]} backdrop={bd.legal.hero} eyebrow="Legal" title="Privacy policy" lead={`How ${site.legalName} handles the information you share with us.`} />
       <section className="sec-tight" style={{ paddingTop: 0 }}>
+        <Backdrop items={bd.legal.body} />
         <div className="prose wrap wrap-narrow">
           <h2>What we collect</h2>
           <p>When you fill in the AURA Scan, contact form or career form, we collect what you enter: typically your name, phone number, email, business name, and your answers to the scan questions.</p>

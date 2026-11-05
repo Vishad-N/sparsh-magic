@@ -4,6 +4,7 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { founder, howSteps, stats, type IconName } from '@/lib/data';
+import Backdrop, { type BackdropItem } from './Backdrop';
 import Button from './Button';
 import CountUp from './CountUp';
 import Icon from './Icon';
@@ -12,6 +13,26 @@ const rand = (i: number, seed: number) => {
   const x = Math.sin(i * 12.9898 + seed * 78.233) * 43758.5453;
   return x - Math.floor(x);
 };
+
+/* ---------- Number ranges ---------- */
+
+/** Renders "9–15%" with breathing room around the dash (big tight-tracked numbers). */
+export function Num({ value }: { value: string }) {
+  const parts = value.split(/([–-])/);
+  return (
+    <>
+      {parts.map((p, i) =>
+        p === '–' || p === '-' ? (
+          <span key={i} className="num-dash">
+            –
+          </span>
+        ) : (
+          p
+        ),
+      )}
+    </>
+  );
+}
 
 /* ---------- Headings ---------- */
 
@@ -51,6 +72,7 @@ export function PageHero({
   lead,
   children,
   aside,
+  backdrop,
 }: {
   crumbs: { href?: string; label: string }[];
   eyebrow: string;
@@ -58,9 +80,11 @@ export function PageHero({
   lead?: ReactNode;
   children?: ReactNode;
   aside?: ReactNode;
+  backdrop?: BackdropItem[];
 }) {
   return (
     <section className="phero">
+      {backdrop && <Backdrop items={backdrop} />}
       <div className="wrap">
         <nav aria-label="Breadcrumb">
           <ol className="crumbs">
@@ -220,7 +244,7 @@ export function ResultsGrid() {
       </div>
       <div className="stat">
         <div className="num">
-          {stats.cost}
+          <Num value={stats.cost} />
           <sup>%</sup>
         </div>
         <h3>Annual cost reduction</h3>

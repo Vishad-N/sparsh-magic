@@ -3,6 +3,8 @@ import ContactForm from '@/components/ContactForm';
 import Divider from '@/components/Divider';
 import { PageHero, SectionHead } from '@/components/Blocks';
 import { careerAreas, careerLookFor, site } from '@/lib/data';
+import Backdrop from '@/components/Backdrop';
+import { bd } from '@/lib/backdrops';
 
 export const metadata: Metadata = {
   title: 'Career',
@@ -15,6 +17,7 @@ export default function CareerPage() {
     <>
       <PageHero
         crumbs={[{ href: '/about', label: 'About' }, { label: 'Career' }]}
+        backdrop={bd.career.hero}
         eyebrow="Career"
         title={
           <>
@@ -26,6 +29,7 @@ export default function CareerPage() {
       />
 
       <section className="sec-tight" style={{ paddingTop: 0 }}>
+        <Backdrop items={bd.career.manifesto} />
         <div className="wrap">
           <div className="manifesto rv">
             <p>
@@ -42,6 +46,7 @@ export default function CareerPage() {
       <Divider variant="cells" />
 
       <section className="sec-tight">
+        <Backdrop items={bd.career.grid} />
         <div className="wrap career-grid">
           <div>
             <SectionHead eyebrow="What we look for" title="Four things, no hand-holding." />
@@ -78,6 +83,7 @@ export default function CareerPage() {
       </section>
 
       <section className="sec-tight paper" id="apply">
+        <Backdrop items={bd.career.apply} />
         <Divider variant="grid" className="dv-top" />
         <div className="wrap wrap-narrow">
           <SectionHead eyebrow="Apply" title="Tell us who you are." lead="Five minutes. No cover letter template needed, just tell us why this work matters to you." />

@@ -3,6 +3,8 @@ import Button from '@/components/Button';
 import Divider from '@/components/Divider';
 import { CtaBand, FounderStats, JsonLd, PageHero, Portrait, SectionHead } from '@/components/Blocks';
 import { founder, map49, site, specialties } from '@/lib/data';
+import Backdrop from '@/components/Backdrop';
+import { bd } from '@/lib/backdrops';
 
 export const metadata: Metadata = {
   title: 'About Sparsh Magic & Rupak Aich',
@@ -25,6 +27,7 @@ export default function AboutPage() {
       />
       <PageHero
         crumbs={[{ label: 'About' }]}
+        backdrop={bd.about.hero}
         eyebrow="About Sparsh Magic"
         title={
           <>
@@ -69,6 +72,7 @@ export default function AboutPage() {
       </section>
 
       <section className="sec dark">
+        <Backdrop items={bd.about.truth} tone="dark" />
         <Divider variant="cells" tone="dark" className="dv-top" />
         <div className="wrap truth">
           <span className="eyebrow rv">Why systems, not people</span>
@@ -105,6 +109,7 @@ export default function AboutPage() {
       <Divider variant="trail" />
 
       <section className="sec-tight">
+        <Backdrop items={bd.about.facts} />
         <div className="wrap">
           <div className="facts rv">
             <div>

@@ -3,6 +3,7 @@ import Button from '@/components/Button';
 import Divider from '@/components/Divider';
 import { CtaBand, PageHero, SectionHead, Steps } from '@/components/Blocks';
 import { values } from '@/lib/data';
+import { bd } from '@/lib/backdrops';
 
 export const metadata: Metadata = {
   title: 'Culture',
@@ -28,6 +29,7 @@ export default function CulturePage() {
     <>
       <PageHero
         crumbs={[{ href: '/about', label: 'About' }, { label: 'Culture' }]}
+        backdrop={bd.culture.hero}
         eyebrow="Culture"
         title={
           <>

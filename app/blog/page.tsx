@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Divider from '@/components/Divider';
 import { CtaBand, MiniMatrix, PageHero } from '@/components/Blocks';
 import { formatDate, readMinutes, sortedPosts } from '@/lib/blog';
+import { bd } from '@/lib/backdrops';
 
 export const metadata: Metadata = {
   title: 'Blog: Team Productivity & Accountability for MSMEs',
@@ -16,6 +17,7 @@ export default function BlogPage() {
     <>
       <PageHero
         crumbs={[{ label: 'Blog' }]}
+        backdrop={bd.blog.hero}
         eyebrow="Blog"
         title={
           <>

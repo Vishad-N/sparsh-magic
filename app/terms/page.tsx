@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { PageHero } from '@/components/Blocks';
 import { site } from '@/lib/data';
+import Backdrop from '@/components/Backdrop';
+import { bd } from '@/lib/backdrops';
 
 export const metadata: Metadata = {
   title: 'Terms of Use',
@@ -11,8 +13,9 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <>
-      <PageHero crumbs={[{ label: 'Terms' }]} eyebrow="Legal" title="Terms of use" lead={`The basics of using this website, operated by ${site.legalName}, Indore.`} />
+      <PageHero crumbs={[{ label: 'Terms' }]} backdrop={bd.legal.hero} eyebrow="Legal" title="Terms of use" lead={`The basics of using this website, operated by ${site.legalName}, Indore.`} />
       <section className="sec-tight" style={{ paddingTop: 0 }}>
+        <Backdrop items={bd.legal.body} />
         <div className="prose wrap wrap-narrow">
           <h2>Using this site</h2>
           <p>You may use this website to learn about Sparsh Magic and to contact us. Please don’t misuse the forms or attempt to disrupt the site.</p>
