@@ -57,11 +57,24 @@
 .socials{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
 .socials a{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;box-shadow:inset 0 0 0 1px var(--line);transition:all .25s var(--ease)}
 .socials a:hover{background:var(--ink);color:var(--lime);transform:translateY(-2px)}
-/* Wordmark scales to the footer's own width (container query units),
-   so it always fits edge to edge instead of overflowing on wide screens. */
-.foot .wrap{container-type:inline-size}
-.wordmark{margin-top:56px;padding-bottom:.06em;font:800 15vw/.9 var(--font-display);font-size:17.2cqi;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1.5px rgba(152,126,214,.55);user-select:none;white-space:nowrap;overflow:hidden}
-.wordmark span{color:var(--purple);-webkit-text-stroke:0}
+/* Wordmark: SVG locked to the footer width (see components/Wordmark.tsx) */
+.wordmark{margin-top:56px;user-select:none}
+.wordmark svg{display:block;width:100%;height:auto;overflow:visible}
+.wordmark text{font:800 168px var(--font-display);letter-spacing:-.04em}
+.wm-outline{fill:none;stroke:rgba(152,126,214,.55);stroke-width:1.4;vector-effect:non-scaling-stroke}
+.wm-shine{fill:none;stroke:url(#wm-shine);stroke-width:2.2;vector-effect:non-scaling-stroke}
+.wm-glow{opacity:.85}
+.wm-glow .wm-shine{stroke-width:7}
+.wordmark .wm-dot-t{fill:var(--purple);stroke:none;animation:wmDot 2.8s ease-in-out infinite}
+.wm-sparks path{fill:#E4FF3B;stroke:rgba(152,126,214,.8);stroke-width:.8;vector-effect:non-scaling-stroke;
+  transform-box:fill-box;transform-origin:center;opacity:0;animation:wmSpark 3.6s ease-in-out infinite}
+.wm-sparks path:nth-child(even){fill:#fff;animation-duration:4.4s}
+@keyframes wmSpark{0%,100%{opacity:0;transform:scale(.2) rotate(0deg)}12%{opacity:1;transform:scale(1.15) rotate(45deg)}26%{opacity:.9;transform:scale(.8) rotate(90deg)}40%{opacity:0;transform:scale(.2) rotate(135deg)}}
+@keyframes wmDot{0%,100%{fill:var(--purple)}50%{fill:#B7A2EC}}
+@media (prefers-reduced-motion:reduce){
+  .wm-shine,.wm-glow,.wm-sparks{display:none}
+  .wordmark .wm-dot-t{animation:none}
+}
 .foot-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-top:22px;padding-top:20px;font-size:13px;color:var(--ink-3);position:relative}
 .foot-bot::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:repeating-linear-gradient(90deg,var(--line) 0 8px,transparent 8px 12px)}
 .foot-bot a:hover{color:var(--ink)}

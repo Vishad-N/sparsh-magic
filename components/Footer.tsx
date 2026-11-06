@@ -3,6 +3,7 @@ import { footerGroups, site, tel } from '@/lib/data';
 import { LogoMark } from './Logo';
 import Icon from './Icon';
 import Divider from './Divider';
+import Wordmark from './Wordmark';
 
 const socialIcon = {
   LinkedIn: 'linkedin',
@@ -60,9 +61,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className="wordmark" aria-hidden="true">
-          Sparsh<span>.</span>Magic
-        </div>
+        <Wordmark />
         <div className="foot-bot">
           <span>
             © {new Date().getFullYear()} {site.legalName}. MAP49™ is a trademark of Sparsh Magic.
