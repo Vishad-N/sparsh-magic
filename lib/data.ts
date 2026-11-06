@@ -32,13 +32,13 @@ export const site = {
       mapQuery: '315 Shagun Arcade, Rasoma Square, Vijay Nagar, Indore 452010',
     },
   ],
-  /** Replace '#' with the real profile URLs. */
+  /** Official profiles, as linked from the original sparshmagic.com footer and contact page. */
   social: [
-    { label: 'LinkedIn', href: '#' },
-    { label: 'Instagram', href: '#' },
-    { label: 'YouTube', href: '#' },
-    { label: 'Facebook', href: '#' },
-    { label: 'X (Twitter)', href: '#' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/rupakaich/' },
+    { label: 'Instagram', href: 'https://www.instagram.com/rupak_aich/' },
+    { label: 'YouTube', href: 'https://www.youtube.com/@rupakaich939' },
+    { label: 'Facebook', href: 'https://www.facebook.com/rupak.aich.9' },
+    { label: 'X (Twitter)', href: 'https://twitter.com/AuthorRupak' },
   ],
 } as const;
 

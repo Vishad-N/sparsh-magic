@@ -34,7 +34,7 @@ styles/              base.css (tokens, buttons, dividers, forms),
 ## Editing content
 
 - **Contacts, offices, stats, testimonials:** `lib/data.ts` → `site`, `stats`, `caseStudies`, `testimonials`.
-- **Social links:** `site.social` currently point to `#`. Replace with real URLs.
+- **Social links:** `site.social` (taken from the original sparshmagic.com footer).
 - **WhatsApp number:** `site.whatsapp` (digits only).
 - **New industry page:** add an entry to `industries` in `lib/data.ts`; the route `/industries/<slug>` is generated automatically.
 - **New blog post:** add an entry to `posts` in `lib/blog.ts`.

@@ -48,6 +48,7 @@ const orgLd = {
   email: site.email,
   telephone: site.phones[0],
   areaServed: 'IN',
+  sameAs: site.social.map((s) => s.href),
   address: {
     '@type': 'PostalAddress',
     streetAddress: '315 Shagun Arcade, Rasoma Square, Vijay Nagar',

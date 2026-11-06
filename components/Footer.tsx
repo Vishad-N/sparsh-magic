@@ -30,7 +30,7 @@ export default function Footer() {
             </p>
             <div className="socials">
               {site.social.map((s) => (
-                <a key={s.label} href={s.href} aria-label={s.label}>
+                <a key={s.label} href={s.href} aria-label={`${s.label} (opens in a new tab)`} target="_blank" rel="noopener noreferrer">
                   <Icon name={socialIcon[s.label]} size={18} />
                 </a>
               ))}
