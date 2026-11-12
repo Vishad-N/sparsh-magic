@@ -198,8 +198,8 @@ export function IconTile({ name }: { name: IconName }) {
 export function Portrait() {
   return (
     <div className="portrait rv" role="img" aria-label={`${founder.name}, founder of Sparsh Magic`}>
-      <div className="grid-o" />
-      <div className="mono-l">{founder.initials}</div>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img className="portrait-img" src="/brand/rupak-aich.jpg" width={960} height={1200} alt="" loading="lazy" decoding="async" />
       <div className="cap">
         <b>{founder.name}</b>
         <span>{founder.role}</span>
