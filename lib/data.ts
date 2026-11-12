@@ -56,6 +56,7 @@ export const navLinks: NavLink[] = [
   { href: '/framework', label: 'Framework' },
   { href: '/industries', label: 'Industries' },
   { href: '/results', label: 'Results' },
+  { href: '/videos', label: 'Videos' },
   {
     href: '/about',
     label: 'About',
@@ -76,6 +77,7 @@ export const footerGroups = [
     links: [
       { href: '/framework', label: 'MAP49™ Framework' },
       { href: '/results', label: 'Results' },
+      { href: '/videos', label: 'Video gallery' },
       { href: '/industries', label: 'Industries' },
       { href: '/aura', label: 'AURA Scan' },
     ],

@@ -3,8 +3,9 @@ import { NextResponse } from 'next/server';
 /**
  * Receives AURA Scan, contact and career submissions.
  *
- * Delivery: if LEAD_WEBHOOK_URL is set (Zapier, Make, Google Apps Script,
- * Slack, a CRM…), the validated lead is forwarded there as JSON. Otherwise
+ * Delivery: if LEAD_WEBHOOK_URL is set (a Formspree endpoint such as
+ * https://formspree.io/f/xxxxxxxx, or Zapier, Make, a CRM…), the validated
+ * lead is forwarded there as JSON. Otherwise
  * it is written to the server log so nothing is lost during development.
  */
 
@@ -52,8 +53,22 @@ export async function POST(req: Request) {
 
   const hook = process.env.LEAD_WEBHOOK_URL;
   if (hook) {
+    // Formspree (https://formspree.io/f/<id>) shows nested objects poorly in its
+    // dashboard and emails, so AURA answers/scores are sent as JSON strings.
+    // `_subject` becomes the notification email's subject line.
+    const payload = {
+      ...lead,
+      profile: lead.profile === undefined ? undefined : JSON.stringify(lead.profile),
+      answers: lead.answers === undefined ? undefined : JSON.stringify(lead.answers),
+      scores: lead.scores === undefined ? undefined : JSON.stringify(lead.scores),
+      _subject: `New ${type.toUpperCase()} lead: ${name}${lead.business ? ` (${lead.business})` : ''}`,
+    };
     try {
-      const res = await fetch(hook, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(lead) });
+      const res = await fetch(hook, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload),
+      });
       if (!res.ok) throw new Error(`Webhook responded ${res.status}`);
     } catch (err) {
       console.error('[lead] webhook delivery failed', err);

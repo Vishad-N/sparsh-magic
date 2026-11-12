@@ -8,6 +8,7 @@ import HeroPanel from '@/components/HeroPanel';
 import HeroPattern from '@/components/HeroPattern';
 import Icon from '@/components/Icon';
 import PillarExplorer from '@/components/PillarExplorer';
+import TrustedBy from '@/components/TrustedBy';
 import { CtaBand, FounderStats, Num, IconTile, PainList, Portrait, ResultsGrid, SectionHead, Steps, Ticker } from '@/components/Blocks';
 import { caseStudies, founder, industries, stats } from '@/lib/data';
 import { pillarItems } from '@/lib/explorer';
@@ -103,6 +104,9 @@ export default function Home() {
       </section>
 
       <Ticker />
+
+      {/* ============ TRUSTED BY ============ */}
+      <TrustedBy />
 
       {/* ============ PROBLEM ============ */}
       <section className="sec">
