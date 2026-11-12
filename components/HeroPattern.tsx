@@ -40,11 +40,11 @@ function FragmentSvg({ cells }: { cells: Cell[] }) {
     <svg width={w} height={h} viewBox={`-1 -1 ${w + 2} ${h + 2}`} xmlns="http://www.w3.org/2000/svg" focusable="false">
       {cells.map(([c, r, k], i) =>
         k === 'o' ? (
-          <rect key={i} x={c * STEP + 0.75} y={r * STEP + 0.75} width={SIZE - 1.5} height={SIZE - 1.5} rx="2.4" fill="none" stroke="#1C1626" strokeOpacity=".28" strokeWidth="1.1" />
+          <rect key={i} x={c * STEP + 0.75} y={r * STEP + 0.75} width={SIZE - 1.5} height={SIZE - 1.5} rx="2.4" fill="none" stroke="#071722" strokeOpacity=".28" strokeWidth="1.1" />
         ) : k === 'l' ? (
-          <rect key={i} x={c * STEP} y={r * STEP} width={SIZE} height={SIZE} rx="2.6" fill="#E4FF3B" stroke="#1C1626" strokeOpacity=".22" strokeWidth=".9" />
+          <rect key={i} x={c * STEP} y={r * STEP} width={SIZE} height={SIZE} rx="2.6" fill="#52DDB6" stroke="#071722" strokeOpacity=".22" strokeWidth=".9" />
         ) : (
-          <rect key={i} x={c * STEP} y={r * STEP} width={SIZE} height={SIZE} rx="2.6" fill="#987ED6" fillOpacity=".55" />
+          <rect key={i} x={c * STEP} y={r * STEP} width={SIZE} height={SIZE} rx="2.6" fill="#2E94A0" fillOpacity=".55" />
         ),
       )}
     </svg>
@@ -58,18 +58,18 @@ function GhostMatrix() {
   const span = 7 * cell + 6 * gap;
   return (
     <svg viewBox={`0 0 ${span + o * 2} ${span + o * 2}`} xmlns="http://www.w3.org/2000/svg" focusable="false">
-      <g fill="none" stroke="#1C1626" strokeOpacity=".14" strokeWidth="1.3" strokeDasharray="3 5">
+      <g fill="none" stroke="#071722" strokeOpacity=".14" strokeWidth="1.3" strokeDasharray="3 5">
         {Array.from({ length: 49 }, (_, i) => (
           <rect key={i} x={o + (i % 7) * (cell + gap)} y={o + Math.floor(i / 7) * (cell + gap)} width={cell} height={cell} rx="16" />
         ))}
       </g>
       {/* a few cells already "on": the system starting to form */}
-      <g fill="#987ED6" fillOpacity=".11">
+      <g fill="#2E94A0" fillOpacity=".11">
         {[45, 46, 39, 40, 47, 33, 41, 48].map((i) => (
           <rect key={i} x={o + (i % 7) * (cell + gap)} y={o + Math.floor(i / 7) * (cell + gap)} width={cell} height={cell} rx="16" />
         ))}
       </g>
-      <g fill="#1C1626" fillOpacity=".22" fontFamily="ui-monospace, Consolas, monospace" fontSize="13" letterSpacing="1">
+      <g fill="#071722" fillOpacity=".22" fontFamily="ui-monospace, Consolas, monospace" fontSize="13" letterSpacing="1">
         {Array.from({ length: 7 }, (_, i) => (
           <text key={`l${i}`} x={o + i * (cell + gap) + cell / 2} y={o - 14} textAnchor="middle">
             L{i + 1}
@@ -82,7 +82,7 @@ function GhostMatrix() {
         ))}
       </g>
       {/* corner registration marks */}
-      <g stroke="#987ED6" strokeOpacity=".45" strokeWidth="1.5" fill="none">
+      <g stroke="#2E94A0" strokeOpacity=".45" strokeWidth="1.5" fill="none">
         <path d={`M${o - 22} ${o - 4}V${o - 22}H${o - 4}`} />
         <path d={`M${span + o + 4} ${span + o + 22}H${span + o + 22}V${span + o + 4}`} />
       </g>
@@ -93,12 +93,12 @@ function GhostMatrix() {
 function Traces() {
   return (
     <svg className="hp-traces" viewBox="0 0 1200 820" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" focusable="false">
-      <g fill="none" stroke="#987ED6" strokeOpacity=".35" strokeWidth="1" vectorEffect="non-scaling-stroke">
+      <g fill="none" stroke="#2E94A0" strokeOpacity=".35" strokeWidth="1" vectorEffect="non-scaling-stroke">
         <path className="tr tr-a" d="M-10 64H300l26 26H560" />
         <path className="tr tr-b" d="M1210 772H880l-30-30H640" />
         <path className="tr tr-c" d="M140 820V700l24-24h130" />
       </g>
-      <g fill="#987ED6" fillOpacity=".5">
+      <g fill="#2E94A0" fillOpacity=".5">
         <rect x="556" y="86" width="8" height="8" rx="2" />
         <rect x="636" y="738" width="8" height="8" rx="2" />
         <rect x="290" y="672" width="8" height="8" rx="2" />

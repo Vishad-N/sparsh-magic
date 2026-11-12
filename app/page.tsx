@@ -88,7 +88,7 @@ export default function Home() {
               </div>
             </div>
             <div className="float-chip b" aria-hidden="true">
-              <span className="dot" style={{ background: 'var(--purple)', color: 'var(--paper)' }}>
+              <span className="dot" style={{ background: 'var(--teal)', color: 'var(--paper)' }}>
                 ↑
               </span>
               <div>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { footerGroups, site, tel } from '@/lib/data';
-import { LogoMark } from './Logo';
+import { LogoStacked } from './Logo';
 import Icon from './Icon';
 import Divider from './Divider';
 import Wordmark from './Wordmark';
@@ -20,12 +20,7 @@ export default function Footer() {
       <div className="wrap">
         <div className="foot-grid">
           <div className="foot-brand">
-            <Link className="logo" href="/" aria-label="Sparsh Magic home">
-              <LogoMark />
-              <span>
-                Sparsh Magic<small>MAP49™ System</small>
-              </span>
-            </Link>
+            <LogoStacked />
             <p>
               {site.tagline}. Self-driven team systems for Indian MSME founders. {site.mission}
             </p>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="538 8 524 466"><defs>
+<linearGradient id="ma" gradientUnits="userSpaceOnUse" x1="0" y1="134" x2="0" y2="468"><stop offset="0" stop-color="#42CAA2"/><stop offset=".5" stop-color="#2E94A0"/><stop offset="1" stop-color="#195D9E"/></linearGradient>
+<linearGradient id="mb" gradientUnits="userSpaceOnUse" x1="0" y1="176" x2="0" y2="426"><stop offset="0" stop-color="#FA0082"/><stop offset=".5" stop-color="#9D0051"/><stop offset="1" stop-color="#37001D"/></linearGradient>
+<linearGradient id="mc" gradientUnits="userSpaceOnUse" x1="0" y1="215" x2="0" y2="415"><stop offset=".075" stop-color="#C30034"/><stop offset=".425" stop-color="#5F001A"/><stop offset=".875" stop-color="#16030B"/></linearGradient>
+<linearGradient id="md" gradientUnits="userSpaceOnUse" x1="0" y1="13" x2="0" y2="121"><stop offset="0" stop-color="#F2007C"/><stop offset="1" stop-color="#3A001E"/></linearGradient>
+<linearGradient id="me" gradientUnits="userSpaceOnUse" x1="0" y1="97" x2="0" y2="165"><stop offset="0" stop-color="#48CCA6"/><stop offset="1" stop-color="#1B629E"/></linearGradient>
+<clipPath id="mk"><circle cx="710" cy="300.5" r="167"/></clipPath>
+</defs>
+<circle cx="664" cy="67" r="54" fill="url(#md)"/>
+<circle cx="965" cy="131" r="34" fill="url(#me)"/>
+<circle cx="710" cy="300.5" r="167" fill="url(#ma)"/>
+<circle cx="932" cy="301" r="125" fill="url(#mb)"/>
+<g clip-path="url(#mk)"><circle cx="932" cy="301" r="125" fill="url(#mc)"/></g></svg>
