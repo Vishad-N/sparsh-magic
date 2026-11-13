@@ -37,13 +37,13 @@ export default function Home() {
         <div className="wrap hero-grid">
           <div>
             <span className="badge rv">
-              <b>MAP49™</b> Matrix of Accountability &amp; Productivity
+              <b>MAP49</b> Matrix of Accountability &amp; Productivity
             </span>
             <h1 className="rv" style={{ ['--rd' as string]: '.08s' }}>
               Fix lazy team culture. <span className="mark">Forever.</span>
             </h1>
             <p className="hero-sub rv" style={{ ['--rd' as string]: '.16s' }}>
-              Stop <span className="strike">chasing your team</span> every morning. MAP49™ installs a self-driven operating system in your MSME, so work
+              Stop <span className="strike">chasing your team</span> every morning. MAP49 installs a self-driven operating system in your MSME, so work
               moves without you and profit shows up on the P&amp;L.
             </p>
             <div className="btn-row rv" style={{ ['--rd' as string]: '.24s' }}>
@@ -164,7 +164,7 @@ export default function Home() {
         <Divider variant="grid" className="dv-top" />
         <div className="wrap">
           <SectionHead
-            eyebrow="The MAP49™ Framework"
+            eyebrow="The MAP49 Framework"
             title={
               <>
                 7 pillars × 7 levels.
@@ -172,7 +172,7 @@ export default function Home() {
                 <span className="purple">49 checkpoints</span> that run your team.
               </>
             }
-            lead="MAP49™ maps every role against seven accountability pillars, then moves each one up seven maturity levels, from founder-dependent to fully self-driven. Pick a pillar to see it on the matrix."
+            lead="MAP49 maps every role against seven accountability pillars, then moves each one up seven maturity levels, from founder-dependent to fully self-driven. Pick a pillar to see it on the matrix."
           />
           <div className="sec-body rv">
             <PillarExplorer items={pillarItems()} auto id="home-px" stickyView />
@@ -198,7 +198,7 @@ export default function Home() {
                 Numbers, not motivation.
               </>
             }
-            lead="MAP49™ is plug-and-play. It goes in on top of the team you already have, and it’s measured the way a founder measures: cost, profit and time back."
+            lead="MAP49 is plug-and-play. It goes in on top of the team you already have, and it’s measured the way a founder measures: cost, profit and time back."
           />
           <ResultsGrid />
           <div className="benefits">
@@ -293,7 +293,7 @@ export default function Home() {
                   not a motivational speaker.
                 </>
               }
-              lead={`${founder.name} has spent ${stats.years} years inside real Indian businesses, diagnosing why teams underperform and fixing it with systems. MAP49™ is the distilled result of 342+ MSME transformations and 32,000+ team members analysed.`}
+              lead={`${founder.name} has spent ${stats.years} years inside real Indian businesses, diagnosing why teams underperform and fixing it with systems. MAP49 is the distilled result of 342+ MSME transformations and 32,000+ team members analysed.`}
             />
             <FounderStats />
             <blockquote className="quote rv" style={{ ['--rd' as string]: '.24s' }}>

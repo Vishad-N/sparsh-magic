@@ -11,9 +11,9 @@ import Backdrop from '@/components/Backdrop';
 import { bd } from '@/lib/backdrops';
 
 export const metadata: Metadata = {
-  title: 'MAP49™ Framework: 7 Pillars × 7 Levels',
+  title: 'MAP49 Framework: 7 Pillars × 7 Levels',
   description:
-    'Inside MAP49™, the Matrix of Accountability & Productivity: seven accountability pillars, seven maturity levels and 49 checkpoints that turn a founder-dependent team into a self-driven one.',
+    'Inside MAP49, the Matrix of Accountability & Productivity: seven accountability pillars, seven maturity levels and 49 checkpoints that turn a founder-dependent team into a self-driven one.',
   alternates: { canonical: '/framework' },
 };
 
@@ -35,8 +35,8 @@ const PRACTICE = [
 ];
 
 const faq = [
-  { q: 'What does MAP49™ stand for?', a: `${map49.fullName}. Seven pillars of accountability, each moved through seven levels of maturity, giving 49 checkpoints.` },
-  { q: 'Do I need to replace my team?', a: 'No. MAP49™ goes in on top of the team you already have. The premise is that you need better systems, not better people.' },
+  { q: 'What does MAP49 stand for?', a: `${map49.fullName}. Seven pillars of accountability, each moved through seven levels of maturity, giving 49 checkpoints.` },
+  { q: 'Do I need to replace my team?', a: 'No. MAP49 goes in on top of the team you already have. The premise is that you need better systems, not better people.' },
   { q: 'How long does it take?', a: 'The first changes are visible within weeks. A typical installation runs about three months, after which the team runs the rhythm itself.' },
 ];
 
@@ -70,9 +70,9 @@ export default function FrameworkPage() {
             stickyView
             intro={
               <div className="fw-intro">
-                <span className="eyebrow rv">The MAP49™ Framework</span>
+                <span className="eyebrow rv">The MAP49 Framework</span>
                 <h1 className="h1 rv" style={{ ['--rd' as string]: '.06s' }}>
-                  MAP49™: 7 pillars <span className="purple">×</span> 7 levels.
+                  MAP49: 7 pillars <span className="purple">×</span> 7 levels.
                 </h1>
                 <p className="lead rv" style={{ ['--rd' as string]: '.12s' }}>
                   The {map49.fullName}. {map49.description}
@@ -174,7 +174,7 @@ export default function FrameworkPage() {
                 Same team. <span className="mark">Different system.</span>
               </>
             }
-            lead="What typically changes when MAP49™ goes in. Same people, same office, same customers."
+            lead="What typically changes when MAP49 goes in. Same people, same office, same customers."
           />
           <BeforeAfter
             rows={BA_ROWS}
@@ -198,7 +198,7 @@ export default function FrameworkPage() {
                 one pillar group at a time.
               </>
             }
-            lead="MAP49™ is not a workshop you take notes in. It is a sequence of changes your team runs with, guided by Sparsh Magic coaches."
+            lead="MAP49 is not a workshop you take notes in. It is a sequence of changes your team runs with, guided by Sparsh Magic coaches."
           />
           <ol className="practice">
             {PRACTICE.map((s, i) => (
@@ -236,7 +236,7 @@ export default function FrameworkPage() {
             eyebrow="Typical results"
             title={
               <>
-                What MAP49™ is <span className="lime">measured</span> on.
+                What MAP49 is <span className="lime">measured</span> on.
               </>
             }
           />
@@ -285,7 +285,7 @@ export default function FrameworkPage() {
             See how this looks <em>in your business.</em>
           </>
         }
-        lead="The AURA Scan places your business on the MAP49™ matrix in five minutes and shows the two pillars to fix first."
+        lead="The AURA Scan places your business on the MAP49 matrix in five minutes and shows the two pillars to fix first."
         primary={{ href: '/aura', label: 'Start AURA Scan' }}
       />
     </>

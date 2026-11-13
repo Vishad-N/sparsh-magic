@@ -154,7 +154,7 @@ export default function AuraScan() {
                 Message us on WhatsApp
               </Button>
               <Button href="/framework" variant="ghost">
-                Read about MAP49™
+                Read about MAP49
               </Button>
             </div>
           </div>

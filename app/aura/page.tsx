@@ -8,13 +8,13 @@ import { bd } from '@/lib/backdrops';
 export const metadata: Metadata = {
   title: 'AURA Scan: Free 5-Minute Team System Diagnostic',
   description:
-    'Take the AURA Scan, a free founder diagnostic from Sparsh Magic. See your system health score, your level on each MAP49™ pillar, and the two leaks to fix first.',
+    'Take the AURA Scan, a free founder diagnostic from Sparsh Magic. See your system health score, your level on each MAP49 pillar, and the two leaks to fix first.',
   alternates: { canonical: '/aura' },
 };
 
 const GET = [
   { k: '01', title: 'System health score', text: 'One number, 0–100, for how self-driven your business is today.' },
-  { k: '02', title: 'Your 7-pillar map', text: 'Where you sit on each MAP49™ pillar, from founder-driven to leads-others.' },
+  { k: '02', title: 'Your 7-pillar map', text: 'Where you sit on each MAP49 pillar, from founder-driven to leads-others.' },
   { k: '03', title: 'Your first two fixes', text: 'The two leaks costing you most, and the first move for each.' },
 ];
 
@@ -32,7 +32,7 @@ export default function AuraPage() {
             <span className="purple">Find the leaks.</span>
           </>
         }
-        lead="Ten quick questions, about five minutes. The AURA Scan places your business on the MAP49™ matrix and shows exactly where accountability breaks down."
+        lead="Ten quick questions, about five minutes. The AURA Scan places your business on the MAP49 matrix and shows exactly where accountability breaks down."
       >
         <ul className="ticks light rv" style={{ ['--rd' as string]: '.18s' }}>
           <li>No cost, no obligation</li>

@@ -12,11 +12,11 @@ import { founder, site } from '@/lib/data';
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: 'Sparsh Magic | Fix Lazy Team Culture Forever with MAP49™',
+    default: 'Sparsh Magic | Fix Lazy Team Culture Forever with MAP49',
     template: '%s | Sparsh Magic',
   },
   description:
-    'Sparsh Magic helps Indian MSME founders build self-driven teams with MAP49™, the Matrix of Accountability & Productivity. No more chasing. Just smooth systems, focused execution and founder freedom.',
+    'Sparsh Magic helps Indian MSME founders build self-driven teams with MAP49, the Matrix of Accountability & Productivity. No more chasing. Just smooth systems, focused execution and founder freedom.',
   applicationName: site.name,
   authors: [{ name: founder.name }],
   openGraph: {
@@ -42,7 +42,7 @@ const orgLd = {
   legalName: site.legalName,
   url: site.url,
   slogan: site.mission,
-  description: `${site.tagline}. MAP49™ team accountability and productivity system for MSMEs.`,
+  description: `${site.tagline}. MAP49 team accountability and productivity system for MSMEs.`,
   foundingDate: String(site.founded),
   founder: { '@type': 'Person', name: founder.name, jobTitle: founder.title },
   email: site.email,

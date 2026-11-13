@@ -5,10 +5,11 @@ import { CtaBand, PageHero, SectionHead } from '@/components/Blocks';
 import { founder, site, teamUnits } from '@/lib/data';
 import Backdrop from '@/components/Backdrop';
 import { bd } from '@/lib/backdrops';
+import TeamShowcase from '@/components/TeamShowcase';
 
 export const metadata: Metadata = {
   title: 'Team',
-  description: `The Sparsh Magic team: ${site.teamSize} people in Indore who diagnose, install and run MAP49™ systems with MSME founders.`,
+  description: `The Sparsh Magic team: ${site.teamSize} people in Indore who diagnose, install and run MAP49 systems with MSME founders.`,
   alternates: { canonical: '/team' },
 };
 
@@ -36,8 +37,10 @@ export default function TeamPage() {
             <span className="purple">install the system.</span>
           </>
         }
-        lead={`A team of ${site.teamSize} across two offices in Indore. Each group owns one part of the MAP49™ system, the same way we ask our clients’ teams to.`}
+        lead={`A team of ${site.teamSize} across two offices in Indore. Each group owns one part of the MAP49 system, the same way we ask our clients’ teams to.`}
       />
+
+      <TeamShowcase />
 
       <section className="sec-tight" style={{ paddingTop: 0 }}>
         <div className="wrap">
@@ -46,7 +49,7 @@ export default function TeamPage() {
               <CardMark />
               <span className="tm-ava">{founder.initials}</span>
               <h3>{founder.name}</h3>
-              <span className="tm-role">Founder · Creator of MAP49™</span>
+              <span className="tm-role">Founder · Creator of MAP49</span>
               <p>Designs the system and leads every founder debrief. 30+ years inside Indian businesses.</p>
             </article>
             {teamUnits.map((u, i) => (

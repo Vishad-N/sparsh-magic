@@ -24,7 +24,7 @@ export default function TermsPage() {
           <h2>Results and figures</h2>
           <p>Figures such as cost reduction and profit increase are reported averages across client engagements. Individual results depend on each business and on implementation.</p>
           <h2>Intellectual property</h2>
-          <p>MAP49™, the AURA Scan and the content of this site belong to Sparsh Magic. Please ask before reproducing them.</p>
+          <p>MAP49, the AURA Scan and the content of this site belong to Sparsh Magic. Please ask before reproducing them.</p>
           <h2>Contact</h2>
           <p>
             Questions about these terms: <a href={`mailto:${site.email}`}>{site.email}</a>.

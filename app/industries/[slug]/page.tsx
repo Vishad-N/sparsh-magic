@@ -20,7 +20,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const ind = getIndustry(params.slug);
   if (!ind) return {};
   return {
-    title: `MAP49™ for ${ind.title}`,
+    title: `MAP49 for ${ind.title}`,
     description: `${ind.headline} ${ind.intro}`.slice(0, 158),
     alternates: { canonical: `/industries/${ind.slug}` },
   };
@@ -36,7 +36,7 @@ export default function IndustryPage({ params }: { params: { slug: string } }) {
     <>
       <PageHero
         crumbs={[{ href: '/industries', label: 'Industries' }, { label: ind.title }]}
-        eyebrow={`MAP49™ for ${ind.title}`}
+        eyebrow={`MAP49 for ${ind.title}`}
         title={ind.headline}
         lead={ind.intro}
         aside={
@@ -81,9 +81,9 @@ export default function IndustryPage({ params }: { params: { slug: string } }) {
         <Divider variant="grid" className="dv-top" />
         <div className="wrap">
           <SectionHead
-            eyebrow="How MAP49™ maps onto it"
+            eyebrow="How MAP49 maps onto it"
             title="The system, built for your sector."
-            lead="Each fix below sits on one MAP49™ pillar. Select one to see it on the matrix."
+            lead="Each fix below sits on one MAP49 pillar. Select one to see it on the matrix."
           />
           <div className="sec-body rv">
             <PillarExplorer id={`ind-${ind.slug}`} items={industryItems(ind)} />

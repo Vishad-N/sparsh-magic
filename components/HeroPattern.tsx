@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react';
 
 /**
- * Hero backdrop that tells the MAP49™ story: chaos → order.
+ * Hero backdrop that tells the MAP49 story: chaos → order.
  *
  *  - A ghost 7×7 matrix sits behind the control panel, tilted.
  *  - Matrix fragments float at different depths, rotated off-grid.

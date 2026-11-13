@@ -100,7 +100,7 @@ export default function ResultsPage() {
                 </blockquote>
                 {c.industrySlug && (
                   <Link href={`/industries/${c.industrySlug}`} className="text-link case-link">
-                    MAP49™ for {c.sector} →
+                    MAP49 for {c.sector} →
                   </Link>
                 )}
               </article>

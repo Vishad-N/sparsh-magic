@@ -13,7 +13,7 @@ import Motif, { type MotifName } from './Motifs';
  * Motion (shared engine, one rAF, transform only):
  *  - parallax: motifs drift slower than the content, far ones more so
  *  - alignment: tilted motifs rotate toward 0° as their section reaches
- *    the middle of the screen (the MAP49™ chaos → order idea)
+ *    the middle of the screen (the MAP49 chaos → order idea)
  * Hidden below 1240px unless `mob` is set. Static for reduced motion.
  */
 

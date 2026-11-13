@@ -5,7 +5,7 @@ import { CtaBand, PageHero } from '@/components/Blocks';
 import { shorts, videos } from '@/lib/videos';
 
 export const metadata: Metadata = {
-  title: 'Video Gallery: MAP49™ Talks & Shorts',
+  title: 'Video Gallery: MAP49 Talks & Shorts',
   description:
     'Watch Rupak Aich and the Sparsh Magic team: full-length talks on team accountability and founder freedom, plus quick YouTube Shorts on building self-driven teams.',
   alternates: { canonical: '/videos' },

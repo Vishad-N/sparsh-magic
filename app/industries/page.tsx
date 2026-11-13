@@ -7,9 +7,9 @@ import Backdrop from '@/components/Backdrop';
 import { bd } from '@/lib/backdrops';
 
 export const metadata: Metadata = {
-  title: 'Industries: MAP49™ for Manufacturing, Retail, Fitness, Restaurants & More',
+  title: 'Industries: MAP49 for Manufacturing, Retail, Fitness, Restaurants & More',
   description:
-    'How Sparsh Magic’s MAP49™ system applies to manufacturing, retail, fitness, restaurants, distribution, healthcare, finance and service businesses.',
+    'How Sparsh Magic’s MAP49 system applies to manufacturing, retail, fitness, restaurants, distribution, healthcare, finance and service businesses.',
   alternates: { canonical: '/industries' },
 };
 
@@ -27,7 +27,7 @@ export default function IndustriesPage() {
             Tuned to <span className="purple">your floor.</span>
           </>
         }
-        lead="The pillars are the same everywhere. What changes is where work leaks: the shift handover, the billing counter, the kitchen pass, the collections call. Pick your sector to see how MAP49™ maps onto it."
+        lead="The pillars are the same everywhere. What changes is where work leaks: the shift handover, the billing counter, the kitchen pass, the collections call. Pick your sector to see how MAP49 maps onto it."
       />
 
       <section className="sec-tight" style={{ paddingTop: 0 }}>

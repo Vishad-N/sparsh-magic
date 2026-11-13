@@ -94,7 +94,7 @@ export default function AboutPage() {
 
       <section className="sec-tight">
         <div className="wrap">
-          <SectionHead eyebrow="What we do" title="Seven specialties, one system." lead="Each specialty is a building block inside MAP49™. Together they make accountability measurable." />
+          <SectionHead eyebrow="What we do" title="Seven specialties, one system." lead="Each specialty is a building block inside MAP49. Together they make accountability measurable." />
           <ul className="spec rv">
             {specialties.map((s, i) => (
               <li key={s}>

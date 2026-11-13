@@ -37,7 +37,7 @@ export default function BeforeAfter({ rows, footnote }: { rows: BARow[]; footnot
       <div className="ba-col dark ordered">
         <div className="p-head">
           <div className="p-title">
-            After MAP49™<b>System-run business</b>
+            After MAP49<b>System-run business</b>
           </div>
           <span className="state">ORDER</span>
         </div>

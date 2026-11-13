@@ -118,7 +118,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             Turn the idea into <em>a system.</em>
           </>
         }
-        lead="The AURA Scan shows where your business stands on the MAP49™ matrix, and the first fix to make this week."
+        lead="The AURA Scan shows where your business stands on the MAP49 matrix, and the first fix to make this week."
       />
     </>
   );

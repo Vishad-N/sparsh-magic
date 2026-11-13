@@ -42,5 +42,5 @@ styles/              base.css (tokens, buttons, dividers, forms),
 ## Section dividers
 
 `<Divider variant="grid | cells | trail | scan" tone="light | dark" />` draws
-low-contrast MAP49™ matrix fragments between sections. Use `className="dv-top"`
+low-contrast MAP49 matrix fragments between sections. Use `className="dv-top"`
 to straddle the top edge of a coloured section.

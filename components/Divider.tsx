@@ -1,5 +1,5 @@
 /**
- * Section dividers drawn from the MAP49™ matrix language.
+ * Section dividers drawn from the MAP49 matrix language.
  * Minimal, low-contrast and decorative only (aria-hidden).
  *
  *  grid  – a seven-cell grid fragment with a travelling lime glow

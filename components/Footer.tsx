@@ -59,7 +59,7 @@ export default function Footer() {
         <Wordmark />
         <div className="foot-bot">
           <span>
-            © {new Date().getFullYear()} {site.legalName}. MAP49™ is a trademark of Sparsh Magic.
+            © {new Date().getFullYear()} {site.legalName}. MAP49 is a trademark of Sparsh Magic.
           </span>
           <span>
             <Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link>

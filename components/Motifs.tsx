@@ -1,6 +1,6 @@
 /**
  * Business-analyst motif library: the tools a team-productivity analyst
- * works with, drawn in the MAP49™ house style (rounded cells, dashed
+ * works with, drawn in the MAP49 house style (rounded cells, dashed
  * hairlines, purple fills, a single lime "spark").
  *
  * Colours come from CSS classes so one SVG works on cream and ink:
@@ -276,7 +276,7 @@ function Quadrant() {
   );
 }
 
-/** A stepped MAP49™ matrix fragment. */
+/** A stepped MAP49 matrix fragment. */
 function Fragment() {
   const cells: [number, number, string][] = [
     [0, 2, 'f'], [1, 2, 'f'], [2, 2, 'f'], [1, 1, 'f'], [2, 1, 'f'], [2, 0, 'l'], [0, 1, 's'], [0, 0, 's'], [1, 0, 's'],

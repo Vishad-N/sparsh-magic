@@ -56,7 +56,6 @@ export const navLinks: NavLink[] = [
   { href: '/framework', label: 'Framework' },
   { href: '/industries', label: 'Industries' },
   { href: '/results', label: 'Results' },
-  { href: '/videos', label: 'Videos' },
   {
     href: '/about',
     label: 'About',
@@ -65,6 +64,8 @@ export const navLinks: NavLink[] = [
       { href: '/team', label: 'Team' },
       { href: '/culture', label: 'Culture' },
       { href: '/career', label: 'Career' },
+      { href: '/videos', label: 'Video gallery' },
+      { href: '/about/meetings', label: 'Client meetings' },
     ],
   },
   { href: '/blog', label: 'Blog' },
@@ -75,9 +76,8 @@ export const footerGroups = [
   {
     title: 'System',
     links: [
-      { href: '/framework', label: 'MAP49™ Framework' },
+      { href: '/framework', label: 'MAP49 Framework' },
       { href: '/results', label: 'Results' },
-      { href: '/videos', label: 'Video gallery' },
       { href: '/industries', label: 'Industries' },
       { href: '/aura', label: 'AURA Scan' },
     ],
@@ -89,6 +89,8 @@ export const footerGroups = [
       { href: '/team', label: 'Team' },
       { href: '/culture', label: 'Culture' },
       { href: '/career', label: 'Career' },
+      { href: '/videos', label: 'Video gallery' },
+      { href: '/about/meetings', label: 'Client meetings' },
       { href: '/blog', label: 'Blog' },
     ],
   },
@@ -140,10 +142,10 @@ export const benefits = [
   },
 ];
 
-/* ---------------- MAP49™ ---------------- */
+/* ---------------- MAP49 ---------------- */
 
 export const map49 = {
-  name: 'MAP49™',
+  name: 'MAP49',
   fullName: 'Matrix of Accountability & Productivity 49',
   description:
     'A system that makes productivity easy to carry out. One-page business monitoring. Every person knows where to improve without being pointed out. Profitability improves directly and indirectly.',
@@ -282,7 +284,7 @@ export const howSteps = [
     n: '02',
     when: 'Week 1',
     title: 'Map the 49',
-    text: 'Every role is plotted on the MAP49™ matrix. You see who is driving, who is drifting, and why.',
+    text: 'Every role is plotted on the MAP49 matrix. You see who is driving, who is drifting, and why.',
   },
   {
     n: '03',
@@ -304,12 +306,12 @@ export const founder = {
   name: 'Rupak Aich',
   initials: 'RA',
   title: 'India’s Top Trusted Team Productivity Expert',
-  role: 'Founder, Sparsh Magic · Creator of MAP49™',
+  role: 'Founder, Sparsh Magic · Creator of MAP49',
   book: 'How to achieve: 2x Team Accountability with 5x Team Productivity',
   truth: 'You don’t need better people. You need better systems they can run.',
   bio: [
     'Rupak Aich is the mind behind Sparsh Magic. For more than 30 years he has worked hands-on inside Indian businesses, helping founders run and grow them without daily intervention.',
-    'He has worked with 342+ founders and MSMEs and more than 32,000 team members across manufacturing, retail, hospitality, finance, healthcare and services. MAP49™ is what those engagements taught him, built into a system.',
+    'He has worked with 342+ founders and MSMEs and more than 32,000 team members across manufacturing, retail, hospitality, finance, healthcare and services. MAP49 is what those engagements taught him, built into a system.',
     'He is a practitioner, not a motivational speaker. His popular book, “How to achieve: 2x Team Accountability with 5x Team Productivity”, sets out the same thinking: accountability is designed, not demanded.',
   ],
 };
@@ -359,7 +361,7 @@ export const industries: Industry[] = [
     outcome: 'Every shift hits the same standard.',
     headline: 'Output that doesn’t depend on who is on shift.',
     intro:
-      'Maximise efficiency and productivity. MAP49™ streamlines shop-floor operations, makes supply-chain handoffs owned, and turns improvement areas into measured, bottom-line results.',
+      'Maximise efficiency and productivity. MAP49 streamlines shop-floor operations, makes supply-chain handoffs owned, and turns improvement areas into measured, bottom-line results.',
     pains: [
       { title: 'Supervisor-dependent output', body: 'The line runs well when one strong supervisor is present and slips when they are not.', cost: 'Costs: inconsistent output' },
       { title: 'Quality caught too late', body: 'Rejections surface at dispatch or at the customer, not at the station that caused them.', cost: 'Costs: rework & returns' },
@@ -388,7 +390,7 @@ export const industries: Industry[] = [
     outcome: 'Every store runs the same playbook.',
     headline: 'Every branch, running like the founder is in it.',
     intro:
-      'From inventory management to customer engagement, MAP49™ gives store teams a playbook they own, so you can optimise operations, reduce costs and increase revenue across every location.',
+      'From inventory management to customer engagement, MAP49 gives store teams a playbook they own, so you can optimise operations, reduce costs and increase revenue across every location.',
     pains: [
       { title: 'Branches run on personality', body: 'The store with the strong manager performs. The others drift, and you can’t tell why.', cost: 'Costs: uneven sales' },
       { title: 'Stock surprises', body: 'Fast movers run out and slow movers pile up because nobody owns the count.', cost: 'Costs: lost sales & dead stock' },
@@ -415,7 +417,7 @@ export const industries: Industry[] = [
     outcome: 'Renewals become a process, not luck.',
     headline: 'Members who stay, and a team that keeps them.',
     intro:
-      'Enhance member engagement, improve operational efficiency and drive revenue growth. MAP49™ turns membership management, follow-ups and marketing into owned routines.',
+      'Enhance member engagement, improve operational efficiency and drive revenue growth. MAP49 turns membership management, follow-ups and marketing into owned routines.',
     pains: [
       { title: 'Silent drop-offs', body: 'Members stop coming in week three and nobody notices until renewal is lost.', cost: 'Costs: churn' },
       { title: 'Trainer-dependent experience', body: 'A member’s experience depends on which trainer they get on which day.', cost: 'Costs: uneven service' },
@@ -441,7 +443,7 @@ export const industries: Industry[] = [
     outcome: 'Consistent guest experience, every service.',
     headline: 'The same great service on a Tuesday and a Saturday.',
     intro:
-      'Exceptional guest experiences come from consistent operations. MAP49™ streamlines kitchen and floor routines so service delivery holds up through every rush.',
+      'Exceptional guest experiences come from consistent operations. MAP49 streamlines kitchen and floor routines so service delivery holds up through every rush.',
     pains: [
       { title: 'Rush-hour chaos', body: 'Orders pile up, tickets get missed and the owner steps in to firefight.', cost: 'Costs: bad reviews' },
       { title: 'Food cost drift', body: 'Portions, wastage and pilferage creep up because nobody owns them daily.', cost: 'Costs: margin' },
@@ -467,7 +469,7 @@ export const industries: Industry[] = [
     outcome: 'A team that grows the territory.',
     headline: 'A distribution business that grows past the founder.',
     intro:
-      'Distribution runs on follow-ups: orders, dispatch, collections. MAP49™ puts each of those under an owner with a daily number, so growth no longer depends on the founder’s phone.',
+      'Distribution runs on follow-ups: orders, dispatch, collections. MAP49 puts each of those under an owner with a daily number, so growth no longer depends on the founder’s phone.',
     pains: [
       { title: 'Collections chase', body: 'Outstanding payments only move when the founder calls.', cost: 'Costs: working capital' },
       { title: 'Dispatch errors', body: 'Wrong items and late deliveries damage retailer trust.', cost: 'Costs: repeat orders' },
@@ -494,7 +496,7 @@ export const industries: Industry[] = [
     outcome: 'Reliable patient experience, every visit.',
     headline: 'Patient experience that doesn’t depend on who is at the desk.',
     intro:
-      'In clinics and diagnostic centres, small lapses become lost patients. MAP49™ makes front desk, billing and follow-up routines owned and measured.',
+      'In clinics and diagnostic centres, small lapses become lost patients. MAP49 makes front desk, billing and follow-up routines owned and measured.',
     pains: [
       { title: 'Front-desk bottlenecks', body: 'Waiting times and billing errors frustrate patients.', cost: 'Costs: patient loyalty' },
       { title: 'Follow-ups forgotten', body: 'Reports and review appointments are not tracked to closure.', cost: 'Costs: repeat visits' },
@@ -520,7 +522,7 @@ export const industries: Industry[] = [
     outcome: 'A team that owns the client book.',
     headline: 'A client book the whole team owns.',
     intro:
-      'In finance and wealth firms, the founder often holds every relationship. MAP49™ spreads ownership across the team so service stays sharp and growth stays on track.',
+      'In finance and wealth firms, the founder often holds every relationship. MAP49 spreads ownership across the team so service stays sharp and growth stays on track.',
     pains: [
       { title: 'Partner holds every relationship', body: 'Clients call the founder for everything because nobody else owns them.', cost: 'Costs: founder time' },
       { title: 'Pipeline without rhythm', body: 'Leads and reviews happen when someone remembers.', cost: 'Costs: missed growth' },
@@ -546,7 +548,7 @@ export const industries: Industry[] = [
     outcome: 'Delivery that runs on a calendar.',
     headline: 'Projects delivered on time without the founder escalating.',
     intro:
-      'Service businesses, from tech and agencies to tourism and fashion, sell time and trust. MAP49™ makes delivery, client communication and quality owned by the team.',
+      'Service businesses, from tech and agencies to tourism and fashion, sell time and trust. MAP49 makes delivery, client communication and quality owned by the team.',
     pains: [
       { title: 'Deadlines slip quietly', body: 'Delays are discovered by the client, not by the team.', cost: 'Costs: client trust' },
       { title: 'Founder in every client call', body: 'Clients escalate to the founder because there is no other owner.', cost: 'Costs: founder time' },
@@ -652,7 +654,7 @@ export const values = [
 ];
 
 export const teamUnits = [
-  { initials: 'DX', title: 'Diagnostics & AURA', text: 'Runs the AURA Scan and the first MAP49™ mapping of your business.' },
+  { initials: 'DX', title: 'Diagnostics & AURA', text: 'Runs the AURA Scan and the first MAP49 mapping of your business.' },
   { initials: 'IC', title: 'Implementation Coaches', text: 'Install ownership charts, rhythms and scorecards alongside your team.' },
   { initials: 'AN', title: 'Analytics & Scorecards', text: 'Builds the one-page business monitor and keeps the numbers honest.' },
   { initials: 'TD', title: 'Training & Development', text: 'Designs skill ladders and leadership programmes for your people.' },

@@ -42,7 +42,7 @@ function Tween({ value, dec = 0, suffix = '' }: { value: number; dec?: number; s
 }
 
 /**
- * The MAP49™ control panel: 49 cells scattered in "chaos" that snap into a
+ * The MAP49 control panel: 49 cells scattered in "chaos" that snap into a
  * rising bar chart when the system is switched on.
  */
 export default function HeroPanel({ autoStart = true }: { autoStart?: boolean }) {
@@ -82,7 +82,7 @@ export default function HeroPanel({ autoStart = true }: { autoStart?: boolean })
     <div className={`panel${ordered ? ' ordered' : ''}`} role="group" aria-label="MAP49 control panel demo">
       <div className="p-head">
         <div className="p-title">
-          MAP49™ Control Panel<b>Your business · Live</b>
+          MAP49 Control Panel<b>Your business · Live</b>
         </div>
         <span className="state" aria-live="polite">
           {ordered ? 'ORDER' : 'CHAOS'}
@@ -111,7 +111,7 @@ export default function HeroPanel({ autoStart = true }: { autoStart?: boolean })
           ))}
         </div>
         <button className="toggle" aria-pressed={ordered} onClick={() => setOrdered((o) => !o)}>
-          <span>{ordered ? 'MAP49™ running. Switch off to see chaos' : 'Switch on MAP49™ system'}</span>
+          <span>{ordered ? 'MAP49 running. Switch off to see chaos' : 'Switch on MAP49 system'}</span>
           <span className="sw" aria-hidden="true" />
         </button>
       </div>

@@ -12,7 +12,7 @@ export type ExplorerItem = {
   change?: string;
 };
 
-/** Explorer items for all seven MAP49™ pillars. */
+/** Explorer items for all seven MAP49 pillars. */
 export const pillarItems = (withChange = false): ExplorerItem[] =>
   pillars.map((p, i) => ({
     row: i,
@@ -25,7 +25,7 @@ export const pillarItems = (withChange = false): ExplorerItem[] =>
     change: withChange ? p.founderChange : undefined,
   }));
 
-/** Explorer items showing how MAP49™ applies to one industry. */
+/** Explorer items showing how MAP49 applies to one industry. */
 export const industryItems = (ind: Industry): ExplorerItem[] =>
   ind.mapping.map((m) => {
     const row = pillars.findIndex((p) => p.key === m.pillar);

@@ -13,14 +13,14 @@ export default function TimeSaved() {
       </button>
       <div className="ts-rows" aria-live="polite">
         <div className="ts-row">
-          <span className="ts-lab">Before MAP49™</span>
+          <span className="ts-lab">Before MAP49</span>
           <span className="ts-bar before">
             <i />
           </span>
           <b>4+ hrs / day</b>
         </div>
         <div className="ts-row">
-          <span className="ts-lab">After MAP49™</span>
+          <span className="ts-lab">After MAP49</span>
           <span className="ts-bar after">
             <i />
           </span>

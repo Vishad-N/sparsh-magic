@@ -13,7 +13,7 @@ export default function TrustedBy() {
         <div className="center">
           <span className="eyebrow rv">Trusted by brands</span>
           <h2 id="trusted-h" className="trusted-h rv" style={{ ['--rd' as string]: '.06s' }}>
-            Founders across India run on <span className="purple">MAP49™.</span>
+            Founders across India run on <span className="purple">MAP49.</span>
           </h2>
         </div>
       </div>
